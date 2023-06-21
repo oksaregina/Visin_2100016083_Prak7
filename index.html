@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard</title>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="dashboard.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <style>
+      body {
+        margin-top: 40px;
+        padding: 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1">Penjualan Produk Berdasarkan Kota dan Kategori
+      </span>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">ColumnChart</div>
+            <div class="card-body">
+              <div id="chart1"></div>
+              <div>kesimpulan:</div>
+              <div>1. Boston memiliki penjualan tertinggi untuk produk Bars dengan total penjualan sebesar 3319,99.</div>
+              <div>2. Los Angeles memiliki penjualan tertinggi untuk produk Cookies dengan total penjualan sebesar 4044,53.</div>
+              <div>3. Boston memiliki penjualan tertinggi untuk produk Crackers dengan total penjualan sebesar 2533,74.</div>
+              <div>4. Boston memiliki penjualan tertinggi untuk produk Snacks dengan total penjualan sebesar 930,3.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">PieChart</div>
+            <div class="card-body">
+              <div id="chart2"></div>
+              <div>Kesimpulan:</div>
+              <div>1. Produk Bars memiliki penjualan tertinggi dengan total penjualan sebesar 13265,53.</div>
+              <div>2. Produk Cookies memiliki penjualan menengah dengan total penjualan sebesar 7687,32.</div>
+              <div>3. Produk Crackers juga memiliki penjualan menengah dengan total penjualan sebesar 8258,83.</div>
+              <div>4. Produk Snacks memiliki penjualan terendah dengan total penjualan sebesar 4113,9.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div id="chart2"></div>
+    <!-- Tambahkan lebih banyak elemen div untuk grafik lainnya -->
+  </body>
+</html>
